@@ -1,0 +1,20 @@
+{
+  "name": "mate-fe-nov2-group-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanuhaUA/mate-fe-nov2-group-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanuhaUA/mate-fe-nov2-group-project/issues"
+  },
+  "homepage": "https://github.com/TanuhaUA/mate-fe-nov2-group-project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
