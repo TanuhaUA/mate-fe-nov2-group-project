@@ -14,7 +14,9 @@
   },
   "homepage": "https://github.com/TanuhaUA/mate-fe-nov2-group-project#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2"
   }
 }
