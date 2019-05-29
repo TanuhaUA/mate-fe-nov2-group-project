@@ -44,7 +44,8 @@
   .slider__text {
     color: #95989a;
     font-style: italic;
-    line-height: 1.8; }
+    line-height: 1.8;
+    font-size: 18px; }
   .slider__img {
     height: 32px; }
   .slider__ellipses {
