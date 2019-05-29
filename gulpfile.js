@@ -1,30 +1,22 @@
-var gulp        = require('gulp'),
-    scss        = require('gulp-sass'),
-    browserSync = require('browser-sync');
+    
+var gulp = require('gulp'),
+scss = require('gulp-sass');
 
-gulp.task('scss', async () => {
-    return gulp.src('src/scss/style.scss')
-        .pipe(scss())
-        .pipe(gulp.dest('src/css'))
-        .pipe(browserSync.reload({stream: true}))
+gulp.task('scss', () => {
+return gulp.src('src/scss/style.scss')
+    .pipe(scss())
+    .pipe(gulp.dest('src/css'))
+    .pipe(gulp.dest('app/css'))
 });
 
-gulp.task('browser-sync', async () => {
-    browserSync({
-        server: {
-            baseDir: 'src'
-        },
-        notify: false
-    });
+gulp.task('html', () => {
+return gulp.src('src/index.html')
+    .pipe(gulp.dest('app'))
 });
 
-gulp.task('html', async () => {
-    return gulp.src('src/index.html')
-        .pipe(browserSync.reload({stream: true}))
+gulp.task('watch', () => {
+gulp.watch('src/scss/*.scss', gulp.parallel('scss'));
+gulp.watch('src/index.html', gulp.parallel('html'));
 });
 
-gulp.task('scss-watch', async () => {
-    gulp.watch('src/scss/*.scss', gulp.parallel('scss'));
-});
-
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'html', 'scss-watch'));
+gulp.task('default', gulp.parallel('scss', 'html', 'watch'));
