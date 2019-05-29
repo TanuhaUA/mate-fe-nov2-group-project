@@ -1,26 +1,41 @@
 @import '_variables';
-@import 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
 
 .description {
-    height: 470px;
+    min-height: 470px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $descriptionColor;
+    background-color: $descriptionBackgroundColor;
 
     &__title {
         text-transform: uppercase;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
+        text-align: center;
         margin-top: 35px;
     }
 
     &__text {
-        width: 1070px;
+        max-width: 1070px;
         text-align: center;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
-        font-size: 18px;
+        color: $textColor;
+        line-height: 1.8;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .description {
+        &__title {
+            font-size: 15px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
     }
 }
