@@ -8,7 +8,7 @@ let images = [
     {
         src: '../images/facebook.png',
         title: 'Jason Statham @jason ',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus soluta voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus soluta voluptas!',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus.',
         span: '/ 3 hours'
     },
     {
