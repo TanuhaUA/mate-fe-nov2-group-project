@@ -17,16 +17,21 @@
         line-height: 1.8;
     }
 
+    &__img {
+        height: 32px;
+    }
+
     &__ellipses {
         position: absolute;
         left: 50%;
-        bottom: 20px;
+        bottom: 50px;
         transform: translate(-50%, 0);
 
     }
 
     &__ellipse {
         margin: 0 5px;
+        cursor: pointer;
     }
 }
 
