@@ -1,0 +1,15 @@
+@mixin defaultStylesForContainer() {
+    min-height: 470px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $descriptionBackgroundColor;
+}
+
+@mixin defaultStylesForText() {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: $titleColor;
+}

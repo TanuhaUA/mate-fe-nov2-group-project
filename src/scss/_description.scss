@@ -1,27 +1,19 @@
 @import '_variables';
+@import '_mixins';
 @import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
 
 .description {
-    min-height: 470px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: $descriptionBackgroundColor;
-
+    @include defaultStylesForContainer();
+    @include defaultStylesForText();
+    
     &__title {
         text-transform: uppercase;
-        font-family: 'Lato', sans-serif;
         font-size: 18px;
-        text-align: center;
         margin-top: 35px;
     }
 
     &__text {
         max-width: 1070px;
-        text-align: center;
-        font-family: 'Lato', sans-serif;
         font-size: 18px;
         color: $textColor;
         line-height: 1.8;
