@@ -1,0 +1,90 @@
+.imgTable {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 's1 s2 mv1 mv2 mh2 mh2' 'mh1 mh1 mv1 mv2 s3 s4';
+  grid-template-rows: repeat(2, minmax(200px, 267px));
+  grid-template-columns: repeat(6, minmax(200px, 267px)); }
+  .imgTable__img {
+    background-size: cover; }
+    .imgTable__img:nth-child(1) {
+      grid-area: s1;
+      background: url("../images/Layer_19.jpg") no-repeat; }
+    .imgTable__img:nth-child(2) {
+      grid-area: s2;
+      background: url("../images/Layer_21.jpg") no-repeat; }
+    .imgTable__img:nth-child(3) {
+      grid-area: s3;
+      background: url("../images/Layer_24.jpg") no-repeat; }
+    .imgTable__img:nth-child(4) {
+      grid-area: s4;
+      background: url("../images/Layer_26.jpg") no-repeat; }
+    .imgTable__img:nth-child(5) {
+      grid-area: mv1;
+      background: url("../images/Layer_22.jpg") no-repeat; }
+    .imgTable__img:nth-child(6) {
+      grid-area: mv2;
+      background: url("../images/Layer_25.jpg") no-repeat; }
+    .imgTable__img:nth-child(7) {
+      grid-area: mh1;
+      background: url("../images/Layer_20.jpg") no-repeat; }
+    .imgTable__img:nth-child(8) {
+      grid-area: mh2;
+      background: url("../images/Layer_23.jpg") no-repeat; }
+  .imgTable__block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #64c29e;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.6s linear; }
+  .imgTable__picture {
+    width: 50px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 13px; }
+  .imgTable__element {
+    align-self: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px; }
+  .imgTable__img:hover > .imgTable__block {
+    opacity: 0.8; }
+
+.buttonGroup {
+  width: 100%;
+  height: 200px;
+  background-color: #282f35;
+  display: flex;
+  justify-content: center; }
+  .buttonGroup__button {
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgba(100, 194, 158, 0.5);
+    outline: none;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: #64c29e;
+    align-self: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2.8px;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s linear; }
+    .buttonGroup__button_big {
+      width: 370px; }
+    .buttonGroup__button_margin {
+      margin: 0 82px; }
+  .buttonGroup__button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0; }

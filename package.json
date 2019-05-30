@@ -15,6 +15,31 @@
   "homepage": "https://github.com/TanuhaUA/mate-fe-nov2-group-project#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "@mate-academy/eslint-config": "*",
+    "@mate-academy/htmllint-config": "*",
+    "@mate-academy/stylelint-config": "*",
+    "htmllint": "^0.7.3",
+    "htmllint-cli": "0.0.7",
+    "eslint": "^5.16.0",
+    "lint-staged": "^8.1.5",
+    "stylelint": "^10.0.0",
+    "eslint-plugin-node": "^9.0.1"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.css": [
+        "stylelint",
+        "git add"
+      ],
+      "*.js": [
+        "eslint",
+        "git add"
+      ],
+      "*.html": [
+        "htmllint --rc  ./node_modules/@mate-academy/htmllint-config/.htmllintrc",
+        "git add"
+      ]
+    }
   }
 }
