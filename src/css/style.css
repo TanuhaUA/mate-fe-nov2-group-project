@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0 auto; }
+
+.block-first {
+  display: grid;
+  grid-template-columns: 1fr 533px; }
+
+.block-bicycle-red {
+  background: url(/src/images/Layer_10.png) no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .block-bicycle-red__logobicycle {
+    background: url(/src/images/Logo1.png) no-repeat;
+    width: 113px;
+    height: 118px; }
+
+.block-content-foto {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url(/src/images/Bg.png) no-repeat;
+  z-index: 2;
+  position: relative; }
+
+.block-content-foto:hover {
+  transition: 1s;
+  height: 700px; }
+
+.block-content-text {
+  text-align: center;
+  padding-top: 30px; }
+  .block-content-text__h2 {
+    color: #353738;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .block-content-text__text {
+    color: #848789;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    padding: 0 50px; }
+  .block-content-text__text::after {
+    content: "_____";
+    text-align: center; }
+
+.block-content-redseat {
+  height: 200px;
+  background: url(/src/images/Layer_11.png) no-repeat;
+  background-size: cover;
+  z-index: 1;
+  position: relative; }
+
+.block-second {
+  display: grid;
+  grid-template-columns: 533px 1fr; }
+
+.block-content-blackseat {
+  height: 200px;
+  background: url(/src/images/Layer_13.png) no-repeat;
+  background-size: cover; }
+
+.block-bicycle-black {
+  background: url(/src/images/Layer_12.png) no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .block-bicycle-black__logovintage {
+    background: url(/src/images/Logo2.png) no-repeat;
+    width: 177px;
+    height: 152px; }
+
+.block-third {
+  display: grid;
+  grid-template-columns: 533px 1fr 533px; }
+
+.block-left {
+  background: url(/src/images/Layer_15.png) no-repeat;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .block-left__logo {
+    background: url(/src/images/Logo3.png) no-repeat;
+    width: 208px;
+    height: 67px; }
+
+.block-middle {
+  height: 600px; }
+
+.block-middle-img {
+  height: 200px;
+  background: url(/src/images/Layer_16.png) no-repeat;
+  background-size: cover; }
+
+.block-right {
+  background: url(/src/images/Layer_14.png) no-repeat;
+  height: 600px; }
