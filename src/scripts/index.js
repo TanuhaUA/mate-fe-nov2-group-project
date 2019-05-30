@@ -1,3 +1,4 @@
+let form = document.querySelector('.email__form');
 let input = document.querySelector('.email__input');
 let masege = document.querySelector('.email__masege');
 let btn = document.querySelector('.email__button');
@@ -12,7 +13,8 @@ function removeClass(className1, className2) {
     masege.classList.remove(className1, className2);
 }
 
-function validate() {
+function validate(event) {
+    event.preventDefault();
     let value = input.value;
         if (value.length == 0){
             showMessage("Please, enter your email :)", "email__masege_hint");
@@ -28,13 +30,8 @@ function validate() {
         }
 }
 
-btn.addEventListener('click', validate);
+form.addEventListener('submit', validate);
 
-input.addEventListener('keyup',function(e){
-    if (e.keyCode === 13) {
-        validate();
-      }
-});
 
 
 

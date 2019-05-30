@@ -1,10 +1,12 @@
 .email {
     width: 100%;
-    height: 469px;
+    height: 470px;
     background-color: $emailMainColor;
+    font: italic $emailFontSize $emailFont;
+    color: $emailTextColor;
     @include displayFlex(column, center, center);
     &__logo {
-        width: 94px;
+        width: 95px;
         height: 85px;
         margin-bottom: $element-mb;
         transition: transform .8s ease-in-out;
@@ -15,21 +17,15 @@
         }
     }
     &__text {
-        color: $emailTextColor;
-        font-family: $emailFont;
-        font-size: $emailFontSize;
         margin-bottom: $element-mb;
-        font-style: italic;
     }
     &__input {
         width: 400px;
-        height: 69px;
+        height: 70px;
         border: 1px solid $inputBorderColor;
         background-color: $emailMainColor;
         color: $inputTextColor;
-        font-family: $emailFont;
-        font-size: $inputFontSize;
-        font-style: italic;
+        font: italic $inputFontSize $emailFont;
         padding-left: 25px;
         &_focus {
             &:focus {
@@ -38,14 +34,12 @@
         }
     }
     &__button {
-        width: 126px;
-        height: 69px;
+        width: 125px;
+        height: 70px;
         margin-right: 8px;
         background-color: $emailSecondColor;
+        font: 300  $emailFontSize $emailFont;
         color: $emailMainColor;
-        font-family: $emailFont;
-        font-size: $emailFontSize;
-        font-weight: 300;
         text-transform: uppercase;
         border: none;
         outline: none;

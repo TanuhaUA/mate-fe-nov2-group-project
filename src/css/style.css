@@ -15,48 +15,42 @@
 
 .email {
   width: 100%;
-  height: 469px;
+  height: 470px;
   background-color: white;
+  font: italic 24px "Lato", sans-serif;
+  color: #848789;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .email__logo {
-    width: 94px;
+    width: 95px;
     height: 85px;
     margin-bottom: 35px;
     transition: transform .8s ease-in-out; }
     .email__logo_hover:hover {
       transform: rotate(360deg); }
   .email__text {
-    color: #848789;
-    font-family: "Lato", sans-serif;
-    font-size: 24px;
-    margin-bottom: 35px;
-    font-style: italic; }
+    margin-bottom: 35px; }
   .email__input {
     width: 400px;
-    height: 69px;
+    height: 70px;
     border: 1px solid #d3d7d9;
     background-color: white;
     color: #929292;
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-style: italic;
+    font: italic 20px "Lato", sans-serif;
     padding-left: 25px; }
     .email__input_focus:focus {
       outline: 1.5px solid #64c29e;
       box-shadow: 0 0 5px rgba(100, 194, 158, 0.5);
       border: none; }
   .email__button {
-    width: 126px;
-    height: 69px;
+    width: 125px;
+    height: 70px;
     margin-right: 8px;
     background-color: #64c29e;
+    font: 300 24px "Lato", sans-serif;
     color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
     text-transform: uppercase;
     border: none;
     outline: none;
