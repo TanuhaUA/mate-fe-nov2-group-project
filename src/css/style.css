@@ -3,6 +3,15 @@
   box-sizing: border-box; }
 
 @media (min-width: 320px) and (max-width: 640px) {
+  .email__text {
+    font-size: 34px; }
+  .email__input {
+    width: 100%;
+    height: 79px;
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .email__button {
+    width: 100%; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -17,6 +26,65 @@
     .footer__social {
       margin-right: 25px; } }
 
+.email {
+  width: 100%;
+  height: 470px;
+  background-color: white;
+  font: italic 24px "Lato", sans-serif;
+  color: #848789;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .email__logo {
+    width: 95px;
+    height: 85px;
+    margin-bottom: 35px;
+    transition: transform .8s ease-in-out; }
+    .email__logo_hover:hover {
+      transform: rotate(360deg); }
+  .email__text {
+    margin-bottom: 35px; }
+  .email__input {
+    width: 400px;
+    height: 70px;
+    border: 1px solid #d3d7d9;
+    background-color: white;
+    color: #929292;
+    font: italic 20px "Lato", sans-serif;
+    padding-left: 25px; }
+    .email__input_focus:focus {
+      outline: 1.5px solid #64c29e;
+      box-shadow: 0 0 5px rgba(100, 194, 158, 0.5);
+      border: none; }
+  .email__button {
+    width: 125px;
+    height: 70px;
+    margin-right: 8px;
+    background-color: #64c29e;
+    font: 300 24px "Lato", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    transition: .5s background-color linear, .8s color linear; }
+    .email__button_hover:hover {
+      background-color: white;
+      color: #64c29e;
+      outline: 1.5px solid #64c29e;
+      box-shadow: 0 0 5px rgba(100, 194, 158, 0.5);
+      border: none;
+      cursor: pointer; }
+  .email__masege {
+    font-family: "Lato", sans-serif;
+    font-size: 24px; }
+    .email__masege_error {
+      color: #bd1313; }
+    .email__masege_hint {
+      color: #211eda; }
+    .email__masege_success {
+      color: #64c29e; }
+
 .footer {
   width: 100%;
   height: 250px;
@@ -27,19 +95,15 @@
   align-items: center;
   padding: 0 20%; }
   .footer__info {
-    color: #848789;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: italic; }
+    font: italic 14px "Lato", sans-serif;
+    color: #848789; }
     .footer__info_strong {
       font-size: 16px;
       font-weight: 700; }
   .footer__contact {
     text-decoration: none;
-    color: #848789;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: italic; }
+    font: italic 14px "Lato", sans-serif;
+    color: #848789; }
     .footer__contact_hover:hover {
       color: #64c29e; }
   .footer__list {
@@ -50,28 +114,26 @@
     align-items: center; }
   .footer__social {
     width: 35px;
-    height: 34px;
+    height: 35px;
     margin-right: 8px;
     transition: transform .6s ease-out;
     object-fit: contain; }
     .footer__social_hover:hover {
       transform: scale(1.2); }
   .footer__handcrafted {
-    height: 36px;
+    height: 35px;
     text-decoration: none;
+    font: italic 14px "Lato", sans-serif;
     color: #848789;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-style: italic;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
   .footer__text {
     padding-right: 10px; }
-  .footer__logo img {
+  .footer__logo {
     width: 55px;
-    height: 36px;
+    height: 35px;
     transition: transform .6s ease-out; }
-    .footer__logo img:hover {
+    .footer__logo_hover:hover {
       transform: scale(1.2); }

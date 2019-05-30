@@ -6,8 +6,12 @@
 }
 
 @mixin infoFont {
+    font: italic $footerFontSize $footerFont;
     color: $footerTextColor;
-    font-family: $footerFont;
-    font-size: $footerFontSize;
-    font-style: italic;
+}
+
+@mixin outline($color, $shadow) {
+    outline: 1.5px solid $color;
+    box-shadow: 0 0 5px $shadow;
+    border: none;
 }
