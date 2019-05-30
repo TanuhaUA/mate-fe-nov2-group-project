@@ -1,4 +1,49 @@
 @import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  background: url(../images/bg_header.jpg) no-repeat center;
+  height: 800px;
+  padding-top: 1px;
+  font-family: 'lato'; }
+
+.menu {
+  padding: 50px; }
+  .menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .menu__item {
+    display: inline-block; }
+  .menu__link {
+    color: #4d4959;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+    text-decoration: none; }
+    .menu__link:hover {
+      box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.2);
+      background-color: black;
+      color: white; }
+  .menu__dot {
+    display: inline-block;
+    margin: 0 45px;
+    font-size: 18px; }
+  .menu__logo {
+    display: inline-block;
+    margin: 0 50px; }
+    .menu__logo:hover {
+      transform: rotateY(180deg);
+      transition: .6s; }
+    .menu__logo:not(:hover) {
+      transition: .6s; }
+
 * {
   box-sizing: border-box; }
 
