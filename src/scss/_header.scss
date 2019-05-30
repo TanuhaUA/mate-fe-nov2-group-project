@@ -1,0 +1,15 @@
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(../images/bg_header.jpg) no-repeat center;
+    height: 800px;
+    padding-top: 1px;
+    font-family: 'lato';
+}
+
