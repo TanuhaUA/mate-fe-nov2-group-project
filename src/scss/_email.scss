@@ -1,0 +1,69 @@
+.email {
+    width: 100%;
+    height: 470px;
+    background-color: $emailMainColor;
+    font: italic $emailFontSize $emailFont;
+    color: $emailTextColor;
+    @include displayFlex(column, center, center);
+    &__logo {
+        width: 95px;
+        height: 85px;
+        margin-bottom: $element-mb;
+        transition: transform .8s ease-in-out;
+        &_hover {
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &__text {
+        margin-bottom: $element-mb;
+    }
+    &__input {
+        width: 400px;
+        height: 70px;
+        border: 1px solid $inputBorderColor;
+        background-color: $emailMainColor;
+        color: $inputTextColor;
+        font: italic $inputFontSize $emailFont;
+        padding-left: 25px;
+        &_focus {
+            &:focus {
+                @include outline($emailSecondColor, $shadowColor);
+            } 
+        }
+    }
+    &__button {
+        width: 125px;
+        height: 70px;
+        margin-right: 8px;
+        background-color: $emailSecondColor;
+        font: 300  $emailFontSize $emailFont;
+        color: $emailMainColor;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        transition: .5s background-color linear, .8s color linear;
+        &_hover {
+            &:hover {
+                background-color: $emailMainColor;
+                color: $emailSecondColor;
+                @include outline($emailSecondColor, $shadowColor);;
+                cursor: pointer;
+            }
+        }
+    }
+    &__masege {
+        font-family: $emailFont;
+        font-size: $emailFontSize;
+        &_error {
+            color: $errorColor; 
+        }
+        &_hint {
+            color: $hintColor;
+        }
+        &_success {
+            color: $emailSecondColor;
+        }
+    }
+}

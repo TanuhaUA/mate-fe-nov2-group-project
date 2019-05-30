@@ -1,0 +1,12 @@
+@mixin displayFlex($direction, $justifyCont, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyCont;
+    align-items: $alignItems;
+}
+
+@mixin outline($color, $shadow) {
+    outline: 1.5px solid $color;
+    box-shadow: 0 0 5px $shadow;
+    border: none;
+}
