@@ -8,46 +8,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 533px; }
 
-.block-bicycle-red {
-  background: url(/src/images/Layer_10.png) no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .block-bicycle-red__logobicycle {
-    background: url(/src/images/Logo1.png) no-repeat;
-    width: 113px;
-    height: 118px; }
-
 .block-content-foto {
   height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.block-content-text {
-  text-align: center;
-  padding-top: 30px;
-  background: url(/src/images/Bg.png) no-repeat; }
-  .block-content-text__h2 {
-    color: #353738;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3.6px; }
-  .block-content-text__text {
-    color: #848789;
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: justify;
-    padding: 0 50px; }
-  .block-content-text__text::after {
-    content: "_____";
-    text-align: center; }
 
 .block-content-redseat {
   height: 200px;
@@ -62,18 +27,6 @@ body {
   height: 200px;
   background: url(/src/images/Layer_13.png) no-repeat;
   background-size: cover; }
-
-.block-bicycle-black {
-  background: url(/src/images/Layer_12.png) no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .block-bicycle-black__logovintage {
-    background: url(/src/images/Logo2.png) no-repeat;
-    width: 177px;
-    height: 152px; }
 
 .block-third {
   display: grid;
@@ -101,3 +54,48 @@ body {
 .block-right {
   background: url(/src/images/Layer_14.png) no-repeat;
   height: 600px; }
+
+.block-bicycle {
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .block-bicycle__red {
+    background: url(/src/images/Layer_10.png) no-repeat; }
+  .block-bicycle__black {
+    background: url(/src/images/Layer_12.png) no-repeat; }
+  .block-bicycle__logobicycle {
+    background: url(/src/images/Logo1.png) no-repeat;
+    width: 113px;
+    height: 118px; }
+  .block-bicycle__logovintage {
+    background: url(/src/images/Logo2.png) no-repeat;
+    width: 177px;
+    height: 152px; }
+
+.block-content-text {
+  text-align: center;
+  padding-top: 30px;
+  background: url(/src/images/Bg.png) no-repeat; }
+  .block-content-text__h2 {
+    color: #353738;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  .block-content-text__text {
+    color: #848789;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start; }
+  .block-content-text__text::after {
+    content: "_____";
+    text-align: center; }

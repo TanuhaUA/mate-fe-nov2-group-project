@@ -1,0 +1,27 @@
+.block-bicycle {
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__red {
+        background: url(/src/images/Layer_10.png) no-repeat;
+    }
+
+    &__black {
+        background: url(/src/images/Layer_12.png) no-repeat;
+    }
+
+    &__logobicycle {
+        background: url(/src/images/Logo1.png) no-repeat;
+        width: 113px;
+        height: 118px;
+    }
+
+    &__logovintage {
+        background: url(/src/images/Logo2.png) no-repeat;
+        width: 177px;
+        height: 152px;
+    }
+}
