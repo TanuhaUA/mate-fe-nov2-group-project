@@ -31,19 +31,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(/src/images/Bg.png) no-repeat;
-    z-index: 2;
-    position: relative;
 }
 
-.block-content-foto:hover {
-    transition: 1s;
-    height: 700px;
-}
+// .block-content-foto:hover {
+//     transition: 1s;
+//     height: 700px;
+// }
 
 .block-content-text {
     text-align: center;
     padding-top: 30px;
+    background: url(/src/images/Bg.png) no-repeat;
 
     &__h2 {
         color: #353738;
@@ -74,8 +72,6 @@ body {
     height: 200px;
     background: url(/src/images/Layer_11.png) no-repeat;
     background-size: cover;
-    z-index: 1;
-    position: relative;
 }
 
 .block-second {

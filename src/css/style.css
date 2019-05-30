@@ -24,18 +24,12 @@ body {
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: url(/src/images/Bg.png) no-repeat;
-  z-index: 2;
-  position: relative; }
-
-.block-content-foto:hover {
-  transition: 1s;
-  height: 700px; }
+  justify-content: space-between; }
 
 .block-content-text {
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  background: url(/src/images/Bg.png) no-repeat; }
   .block-content-text__h2 {
     color: #353738;
     font-family: Lato;
@@ -58,9 +52,7 @@ body {
 .block-content-redseat {
   height: 200px;
   background: url(/src/images/Layer_11.png) no-repeat;
-  background-size: cover;
-  z-index: 1;
-  position: relative; }
+  background-size: cover; }
 
 .block-second {
   display: grid;
