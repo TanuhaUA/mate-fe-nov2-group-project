@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .footer {
+        @include displayFlex(column, space-around, center);
+        height: 300px;
+        &__info {
+            font-size: ($footerFontSize + 5);
+            text-align: center;
+        }
+        &__contact {
+            font-size: ($footerFontSize + 5);
+        }
+        &__social {
+            margin-right: 25px;
+        }
+    }
+}

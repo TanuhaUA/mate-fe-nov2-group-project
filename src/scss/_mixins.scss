@@ -1,0 +1,13 @@
+@mixin displayFlex($direction, $justifyCont, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyCont;
+    align-items: $alignItems;
+}
+
+@mixin infoFont {
+    color: $footerTextColor;
+    font-family: $footerFont;
+    font-size: $footerFontSize;
+    font-style: italic;
+}

@@ -1,0 +1,57 @@
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: $footerBgcolor;
+    @include displayFlex(row, space-between, center);
+    padding: 0 20%;
+    &__info {
+        @include infoFont;
+        &_strong {
+            font-size: $footerHeaderFS;
+            font-weight: $footerBoldFont;
+        } 
+    }
+    &__contact {
+        text-decoration: none;
+        @include infoFont;
+        &_hover {
+            &:hover {
+                color: $footerHoverColor;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        @include displayFlex(row, center, center);
+    }
+    &__social {
+        width: 35px;
+        height: 34px;
+        margin-right: 8px;
+        transition: transform .6s ease-out;
+        object-fit: contain;
+        &_hover {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__handcrafted {
+        height: 36px;
+        text-decoration: none;
+        @include infoFont;
+        @include displayFlex(row, space-between, center);
+    } 
+    &__text {
+        padding-right: 10px;
+    }
+    &__logo img {
+        width: 55px;
+        height: 36px;
+        transition: transform .6s ease-out;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
