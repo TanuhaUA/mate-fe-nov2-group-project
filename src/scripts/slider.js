@@ -1,18 +1,18 @@
 let images = [
     {
-        src: '../images/twitter.png',
+        src: './images/twitter.png',
         title: 'AOD New York @aod ',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus soluta voluptas!',
         span: '/ 35 min'
     },
     {
-        src: '../images/facebook.png',
+        src: './images/facebook.png',
         title: 'Jason Statham @jason ',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus.',
         span: '/ 3 hours'
     },
     {
-        src: '../images/instagram.png',
+        src: './images/instagram.png',
         title: 'Maksim Pokhiliy @makspooh ',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus provident corporis repellat harum vero maiores autem, cumque necessitatibus soluta voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit.',
         span: '/ 1 day'
@@ -20,13 +20,19 @@ let images = [
 ];
 
 let sliderImg = document.getElementById('slider__img');
-let ellipses = document.getElementById('slider__ellipses');
+let ellipsesBlock = document.getElementById('slider__ellipses');
+let ellipses = document.getElementsByClassName('slider__ellipse');
 let title = document.getElementById('slider__title');
 let text = document.getElementById('slider__text');
 let span = document.createElement('span');
-console.log(span.textContent);
 
-ellipses.addEventListener('click', (event) => {
+ellipsesBlock.addEventListener('click', (event) => {
+    for (let i = 0; i < ellipses.length; i++) {
+        ellipses[i].setAttribute('src', './images/ellipse-white.png')
+    }
+
+    event.target.setAttribute('src', './images/ellipse-black.png')
+
     let index = event.target.getAttribute('id');
 
     if (index == 0 || index == 1 || index == 2) {
