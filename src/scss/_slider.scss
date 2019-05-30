@@ -37,10 +37,10 @@
         margin: 0 5px;
         cursor: pointer;
     }
-}
 
-span {
-    color: $textColor;
-    font-weight: 100;
-    font-size: 20px;
+    &__span {
+        color: $textColor;
+        font-weight: 100;
+        font-size: 20px;
+    }
 }

@@ -57,8 +57,7 @@
   .slider__ellipse {
     margin: 0 5px;
     cursor: pointer; }
-
-span {
-  color: #95989a;
-  font-weight: 100;
-  font-size: 20px; }
+  .slider__span {
+    color: #95989a;
+    font-weight: 100;
+    font-size: 20px; }
