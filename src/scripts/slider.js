@@ -27,15 +27,18 @@ let text = document.getElementById('slider__text');
 let span = document.createElement('span');
 
 ellipsesBlock.addEventListener('click', (event) => {
+    let index = event.target.getAttribute('id');
+
     for (let i = 0; i < ellipses.length; i++) {
-        ellipses[i].setAttribute('src', './images/ellipse-white.png')
+        if(index != 'slider__ellipses') {
+            ellipses[i].setAttribute('src', './images/ellipse-white.png');
+        }
     }
 
     event.target.setAttribute('src', './images/ellipse-black.png')
 
-    let index = event.target.getAttribute('id');
 
-    if (index == 0 || index == 1 || index == 2) {
+    if (index != 'slider__ellipses') {
         sliderImg.src = images[index].src;
         title.textContent = images[index].title;
         text.textContent = images[index].text;
