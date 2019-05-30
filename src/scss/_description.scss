@@ -1,7 +1,39 @@
+@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+@import '_variables';
+@import '_mixins';
+
+.description {
+    @include defaultStylesForContainer();
+    @include defaultStylesForText();
+    
+    &__title {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 35px;
+    }
+
+    &__text {
+        max-width: 1070px;
+        font-size: 18px;
+        color: $textColor;
+        line-height: 1.8;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .description {
+        &__title {
+            font-size: 15px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+    }
 * {
     box-sizing: border-box;
 }
-@import 'https://fonts.googleapis.com/css?family=Lato&display=swap';
+}
 
 @media (min-width: 320px) and (max-width: 640px) {
     .email {
